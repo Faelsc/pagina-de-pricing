@@ -10,3 +10,15 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.container {
+    max-width: 100%;
+    min-height: 100%;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(images/bg-bottom.svg), url(images/bg-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 100%, 100% 0%;
+    background-size: 18rem, 15rem;   
+}
