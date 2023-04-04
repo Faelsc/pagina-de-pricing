@@ -1,5 +1,5 @@
-const botao = document.getElementById("seletor-barra");
-botao.addEventListener("click", myFunction);
+const botaoPrincipal = document.getElementById("seletor-barra");
+botaoPrincipal.addEventListener("click", myFunction);
 
 function myFunction() {
     var pagamentoMensal = document.getElementsByTagName("h3");
@@ -12,14 +12,12 @@ function myFunction() {
             if (pagamentoMensal[i].style.display === "none") {
                 pagamentoMensal[i].style.display = "block";
                 pagamentoAnual[i].style.display = "none";
-                botao.style.justifyContent = "flex-end"
+                botaoPrincipal.style.justifyContent = "flex-end"
             } else {
                 pagamentoMensal[i].style.display = "none";
                 pagamentoAnual[i].style.display = "block";
-                botao.style.justifyContent = "flex-start"
+                botaoPrincipal.style.justifyContent = "flex-start"
             }
         }
     }
-
-
 }

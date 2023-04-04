@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
 
+:root {
+    --azul-claro: hsl(236, 72%, 79%);
+    --azul-escuro: hsl(237, 63%, 64%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +67,7 @@ p {
 }
 
 #seletor-barra {
-    background-color: hsl(237, 63%, 64%);
+    background-color: var(--azul-escuro);
     width: 3rem;
     height: 1.5rem;
     margin: 0 1.2rem;
@@ -104,7 +109,7 @@ p {
 
 .card-meio {
     padding: 3rem 1.3rem;
-    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background: linear-gradient(var(--azul-claro), var(--azul-escuro));
     color: white;
     border-radius: 10px;
 }
@@ -143,14 +148,14 @@ button {
     font-family: 'Montserrat', sans-serif;
     transition-duration: 3000;
     color:white;
-    background-color: hsl(237, 63%, 64%);
+    background-color: var(--azul-escuro);
     border: none;
     border-radius: 5px; 
     text-transform: uppercase;
 }
 
 .card-meio button {
-    color: hsl(237, 63%, 64%);
+    color: var(--azul-escuro);
     background-color: white;  
 }
 
@@ -160,7 +165,7 @@ button {
 }
 
 button:hover{
-    color:hsl(237, 63%, 64%);
+    color: var(--azul-escuro);
     background-color: transparent;
 }
 
